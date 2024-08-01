@@ -1,0 +1,71 @@
+.container{
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-flow-column{
+  grid-auto-flow: column;
+}
+
+.image-20{
+  height: 20px;
+  width: 20px;
+}
+
+.gap-8{
+  gap: 8px;
+}
+
+.tag{
+  display: flex;
+  background-color: var(--brand-color-dark);
+  border-radius: 4px;
+  width: min-content;
+  font: 600 10px/12px var(--fonter);
+  padding: 4px 8px;
+  place-items: center;
+}
+
+.margin-32{
+  margin: 0 32px 32px 32px ;
+}
+
+.m-b-32{
+  margin-bottom: 32px;
+}
+
+.line{
+  border: none;
+  border: 0.25px solid var(--stroke-color) ;
+  background-color: var(--stroke-color);
+}
+
+.infos-click{
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+
+
+  a {
+    display: flex;
+    place-items: center ;
+    gap: 8px;
+    font: var(--text-span);
+    span{
+      background-image: url(../assests/icons/ArrowRight.svg);
+      background-size: cover;
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+    }
+    &:hover span{
+      background-image: url(../assests/icons/ArrowRight_Hover.svg);
+    }
+  }
+  
+}

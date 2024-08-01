@@ -1,0 +1,37 @@
+#maisLidas{
+  padding-bottom: 80px;
+  color: var(--text-color-secondary);
+
+  p:nth-child(2){
+    display: flex;
+    align-items:center ;
+    gap: 4px;
+  }
+  h3{
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Número máximo de linhas */
+  }
+  article{
+    grid-template-columns: repeat(4,1fr);
+    gap:16px;
+  }
+}
+
+.noticias{
+  div{
+    height: 160px;
+    padding: 8px;
+    margin-bottom: 8px ;
+
+    span{
+      background-color: var(--brand-color-dark);
+      border-radius: 4px;
+      padding: 4px 8px;
+      max-width: fit-content;
+      font-size: 10px;
+    }
+  }
+}
